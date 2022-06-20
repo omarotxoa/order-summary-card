@@ -7,7 +7,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ![](design/mobile-design.jpg)
 
 ### Links
-- Live Site URL: [Add live site URL here](https://omarotxoa.github.io/order-summary-card/)
+- [Live Site URL](https://omarotxoa.github.io/order-summary-card/)
 
 ### Built with
 - Semantic HTML5 markup
