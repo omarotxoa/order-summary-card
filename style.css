@@ -3,9 +3,10 @@
 :root {
     --pale-blue: hsl(225, 100%, 94%);
     --very-pale-blue:  hsl(225, 100%, 98%);
-    --bright-blue: hsl(245, 75%, 52%);
+    --bright-blue: rgb(56, 41, 224);
     --desaturated-blue: hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
+    --hover-blue: #766CF1;
 }
 
 body { 
@@ -21,20 +22,26 @@ body {
     margin: 0;
 }
 
-section {
-    background-color: var(--very-pale-blue);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 main {
     background-color: white;
-    max-width: 20em;
+    width: 20em;
 }
+
 
 .body-container {
     display: grid;
+    justify-content: center;
+}
+
+section {
+    background-color: var(--very-pale-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section div {
+    margin-inline-start: -1.5em;
 }
 
 .flow > * + * {
@@ -61,9 +68,18 @@ section p {
     font-size: .9rem;
 }
 
+.subtext {
+    width: 25ch;
+    line-height: 1.5em;
+}
+
 /* Images */
 img {
     max-width: 100%;
+}
+
+main > img {
+    border-radius: 1em 1em 0 0;
 }
 
 section img {
@@ -79,13 +95,26 @@ button {
     font-weight: 700;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 button.payment {
     background-color: var(--bright-blue);
     color: var(--very-pale-blue);
+    box-shadow: 0 1em 1.5em rgba(56, 41, 224, 0.3);
+}
+
+button.payment:hover {
+    background-color: var(--hover-blue);
 }
 
 button.cancel {
     color: var(--desaturated-blue);
+}
+
+button.cancel:hover {
+    color: var(--dark-blue);
 }
 
 button.change {
@@ -93,23 +122,16 @@ button.change {
     text-decoration: underline;
 }
 
+button.change:hover {
+    color: var(--hover-blue);
+}
+
 
 /* Utility */ 
 .p-1 {
     padding: 1em;
 }
-/* .f-clr-db {
-    color: var(--desaturated-blue);
-}
 
-.f-clr-bb {
-    color: var(--bright-blue);
+.br-1 {
+    border-radius: 1em;
 }
-
-.f-clr-vpb {
-    color: var(--very-pale-blue);
-}
-
-.bg-clr-bb {
-    background-color: var(--bright-blue);
-} */
