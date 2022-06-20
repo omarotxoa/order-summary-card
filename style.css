@@ -73,6 +73,14 @@ section p {
     line-height: 1.5em;
 }
 
+footer a {
+    color: var(--desaturated-blue);
+}
+
+footer a:hover {
+    color: var(--dark-blue);
+}
+
 /* Images */
 img {
     max-width: 100%;
