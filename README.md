@@ -4,7 +4,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Screenshot
 
-![](images/mobile-design.jpg)
+![](design/mobile-design.jpg)
 
 ### Links
 - Live Site URL: [Add live site URL here](https://omarotxoa.github.io/order-summary-card/)
